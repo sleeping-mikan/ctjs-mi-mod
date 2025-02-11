@@ -50,6 +50,9 @@ ${profileHelpMsg}`
         else if (subcommand === "switch") {
             _switch_profile(arg1);
         }
+        else{
+            SendChat("&csubcommandが選択されていません");
+        }
     }).setName(commands.profile.name);
 
     register("command", () => {
