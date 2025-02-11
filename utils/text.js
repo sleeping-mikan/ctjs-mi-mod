@@ -27,7 +27,7 @@ export const syntax_color = {
 commands.profile.help = [
     {
         syntax: `/${commands.profile.name} switch <name>`,
-        description: "§a現在のプロファイルを切り替えます。存在しない場合作成します。§r"
+        description: "§a現在のprofileを切り替えます。存在しない場合作成します。§r"
     }
 ];
 

@@ -34,7 +34,7 @@ const _switch_profile = (name) => {
     for (let i = 0; i < profileCallFuncs.length; i++) {
         profileCallFuncs[i](profileData);
     }
-    SendChat(`プロファイルを${name}に変更しました。`);
+    SendChat(`profileを${name}に変更しました。`);
 }
 
 
@@ -42,9 +42,9 @@ if (define.length === 0) {
     register("command", (subcommand, arg1) => {
         if (subcommand === undefined) {
             SendChat(
-    `§csubcommandが選択されていません
-    ==============================
-    ${profileHelpMsg}`
+`§csubcommandが選択されていません
+==============================
+${profileHelpMsg}`
             );
         }
         else if (subcommand === "switch") {
