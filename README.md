@@ -1,4 +1,4 @@
-# MiFarming Mod
+# Mi Mod
 
 ## How to Use
 
