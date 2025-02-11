@@ -5,7 +5,7 @@
 > [!note]
 > このmodの導入にはChatTriggersの導入が必要です。
 
-release欄からmodule.zipをダウンロードし、解凍した内容を(起動構成のパス)\config\ChatTriggers\modulesに配置してください
+release欄からmodule.zipをダウンロードし、解凍した内容全てを(起動構成のパス)\config\ChatTriggers\modulesに配置してください
 
 > [!note]
 > このパスはゲーム内で/ct filesを実行することで開けることができます。
