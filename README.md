@@ -17,3 +17,4 @@ release欄からmodule.zipをダウンロードし、解凍した内容全てを
 |mi|helpを表示します|
 |mi-help|helpを表示します|
 |mi-profile switch <name>|profileをnameに変更します。存在しない場合、新規作成されます。|
+|mi-profile list|プロファイル一覧を表示します。|
