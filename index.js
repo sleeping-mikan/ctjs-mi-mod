@@ -6,7 +6,6 @@ import { profileCallFuncs, define } from "./core";
 
 const profileHelpMsg = create_help_msg("profile");
 
-console.log(miintro)
 export const profile = new PogObject("MI", {
     profile: "main"
 },"appdata/.profile.json")
@@ -38,7 +37,37 @@ const _switch_profile = (name) => {
 }
 
 
+const _list_profile = () => {
+    const File = Java.type("java.io.File");
+    const path = "./config/ChatTriggers/modules/MI/appdata/profile";
+    const folder = new File(path);
+
+    console.log(folder);
+
+    if (!folder.exists() || !folder.isDirectory()) {
+        SendChat("プロファイルフォルダが見つかりません。");
+        return;
+    }
+
+    // Javaの配列を直接使う
+    const profiles = [];
+    const files = folder.listFiles();
+
+    for (let i = 0; i < files.length; i++) {
+        profiles.push(files[i].getName().split(".")[0]);
+    }
+    
+    SendChat("プロファイル一覧");
+    SendChat("===========================");
+    // <profile>.data.jsonからプロファイル名を取得
+    profiles.forEach(profile => {
+        SendChat(`${profile === "" ? "main" : profile}`);
+    });
+}
+
+
 if (define.length === 0) {
+    console.log(miintro)
     register("command", (subcommand, arg1) => {
         if (subcommand === undefined) {
             SendChat(
@@ -49,6 +78,9 @@ ${profileHelpMsg}`
         }
         else if (subcommand === "switch") {
             _switch_profile(arg1);
+        }
+        else if (subcommand === "list") {
+            _list_profile();
         }
         else{
             SendChat("&csubcommandが選択されていません");
