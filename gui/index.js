@@ -31,7 +31,6 @@ if (includeGuard.length === 0){
             ChatLib.chat("click it " + `${isOn}`)
             config.Mi.Test.enabled = isOn;
             config.save();
-            console.log(JSON.stringify(config));
         })
 
 

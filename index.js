@@ -42,7 +42,6 @@ const _list_profile = () => {
     const path = "./config/ChatTriggers/modules/MI/appdata/profile";
     const folder = new File(path);
 
-    console.log(folder);
 
     if (!folder.exists() || !folder.isDirectory()) {
         SendChat("プロファイルフォルダが見つかりません。");
