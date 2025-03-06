@@ -91,8 +91,5 @@ ${profileHelpMsg}`
         SendChat(profileHelpMsg);
     }).setName(commands.help.name);
 
-    register("command", () => {
-        SendChat(profileHelpMsg);
-    }).setName(commands.base.name);
     define.push(1);
 }

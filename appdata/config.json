@@ -1,0 +1,21 @@
+{
+    "Mi": {
+        "Test": {
+            "enabled": true
+        }
+    },
+    "MiFm": {
+        "JacobContestTracker": {
+            "enabled": true,
+            "scale": 1,
+            "offsetX": 851.5,
+            "offsetY": 65.81396484375
+        },
+        "JacobContestAlert": {
+            "enabled": true
+        },
+        "JacobContestMelonAlert": {
+            "enabled": true
+        }
+    }
+}
