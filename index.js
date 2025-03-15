@@ -3,6 +3,7 @@ import miintro from "./mi-core";
 import { commands, syntax_color, SendChat } from "./utils/text";
 import create_help_msg from "./utils/help";
 import { profileCallFuncs, define } from "./core";
+// import './gui/other/tetris.js'
 
 const profileHelpMsg = create_help_msg("profile");
 
